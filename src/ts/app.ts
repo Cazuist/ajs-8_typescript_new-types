@@ -6,15 +6,15 @@ import Movie from './domain/Movie';
 const cart = new Cart();
 console.log(cart.items);
 
-cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225, true));
-cart.add(new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900, false));
+cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
+cart.add(new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900));
 
-cart.add(new Movie(1010, 'The Shining', 400, false, {country: ['USA', 'Great Britain'], duration: 144}));
+cart.add(new Movie(1010, 'The Shining', 400, {country: ['USA', 'Great Britain'], duration: 144}));
 
 console.log(cart.items);
 
-cart.add(new Movie(1010, 'The Shining', 400, false, {country: ['USA', 'Great Britain'], duration: 144}));
-cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225, true));
+cart.add(new Movie(1010, 'The Shining', 400, {country: ['USA', 'Great Britain'], duration: 144}));
+cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
 
 console.log(cart.items);
 
